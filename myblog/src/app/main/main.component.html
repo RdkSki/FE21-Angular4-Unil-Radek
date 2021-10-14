@@ -1,1 +1,16 @@
-<p>main works!</p>
+<div class="container bg-secondary text-light text-center mt-2 rounded">
+    <h3 class="fs-4 bold">-- Radeks TravelBlog --</h3>
+    <hr>
+    <div class="row">
+        <div *ngFor="let x of cards" class=" col-sm-12 col-md-6 col-lg-3">
+      
+        <div class="card bg-secondary text-light my-3" style="height: auto;">
+          <img src={{x.img}} class="card-img-top h-5rem" alt="place">
+          <div class="card-body">
+            <h5 class="card-title">{{x.place}}</h5>
+            <p class="card-text">visited: {{x.date}}<hr/><p> created on {{x.whencr}} by {{x.whocr}}</p>
+            <a href="#" class="btn btn-primary">read more</a>
+          </div>
+        </div>
+    </div></div>
+</div>

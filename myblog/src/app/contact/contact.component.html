@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<div class="container bg-secondary text-light text-center mt-2 rounded">
+    <h3 class="fs-4 bold">-- Contact us --</h3>
+<form [formGroup]="info" (ngSubmit)="formSubmit()">
+    <hr>
+    <input type="text" placeholder="first" formControlName="fName"><hr>
+    <input type="text" placeholder="last" formControlName="lName"><hr>
+    <input type="text" placeholder="age" formControlName="age"><hr>
+    <input type="email" placeholder="email" formControlName="email"><hr>
+    <input type="textarea" placeholder="your message..." formControlName="msg"><hr>
+    <input type="submit" value="submit"><hr>
+</form>
+</div>
+
